@@ -21,6 +21,7 @@ const userSchema = new mongoose.Schema({
     required: [true, 'userName is required'],
     unique: true
   },
+  googleId: String,
   password: {
     type: String,
     required: [true, "password is required"],
